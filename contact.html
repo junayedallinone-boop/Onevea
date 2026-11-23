@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — ONEVEA</title>
+  <meta name="description" content="Reserve a pair, become a partner, or talk to the Onevea team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23000'/><circle cx='20' cy='32' r='11' fill='none' stroke='%23fdf4df' stroke-width='5'/><circle cx='44' cy='32' r='11' fill='none' stroke='%23fdf4df' stroke-width='5'/></svg>">
+</head>
+<body data-page="contact">
+  <div class="grain"></div><div class="scanlines"></div><div class="vignette"></div>
+  <div class="cursor"><div class="cursor__ring"><span></span></div><div class="cursor__dot"></div><div class="cursor__label mono"></div></div>
+
+  <header class="header">
+    <a href="index.html" class="logo" data-cursor="HOME">ONEVEA<sup>®</sup></a>
+    <nav class="nav">
+      <a href="about.html" data-scramble>About</a>
+      <a href="index.html" data-scramble>Index</a>
+    </nav>
+    <a href="contact.html" class="cta-bar" data-cursor="CONTACT"><span>Get in touch</span></a>
+    <button class="menu-btn" aria-label="Open menu">Menu</button>
+  </header>
+  <div class="mobile-menu">
+    <button class="mobile-menu__close">Close</button>
+    <a href="index.html">Index</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+  <div class="hud">
+    <span class="hud__corner hud__corner--tl"></span><span class="hud__corner hud__corner--tr"></span>
+    <span class="hud__corner hud__corner--bl"></span><span class="hud__corner hud__corner--br"></span>
+    <div class="hud__progress"><i></i></div>
+    <div class="hud__readout mono">SCROLL <span class="hud__pct">000</span>% · FPS <span class="hud__fps">60</span></div>
+  </div>
+
+  <main>
+    <section class="page-hero" style="min-height:70vh">
+      <div class="page-hero__bg"><canvas></canvas></div>
+      <div class="eyebrow mono">[ CONTACT ] — OPEN CHANNEL</div>
+      <h1 class="page-hero__title" style="margin-top:18px">
+        <span class="split-line"><span>Get in</span></span>
+        <span class="split-line"><span>touch</span></span>
+      </h1>
+      <div class="page-hero__meta mono"><span>RESPONSE &lt; 48H</span><span>SIGNAL STRENGTH ▮▮▮▮▯</span></div>
+    </section>
+
+    <section class="section contact" style="padding-top:40px">
+      <div class="contact__info">
+        <div data-reveal><h4 class="mono" style="color:var(--ink-dim);margin-bottom:10px;font-weight:400">GENERAL</h4><a href="mailto:hello@onevea.com" data-scramble>hello@onevea.com</a></div>
+        <div data-reveal><h4 class="mono" style="color:var(--ink-dim);margin-bottom:10px;font-weight:400">PRESS &amp; PARTNERS</h4><a href="mailto:press@onevea.com" data-scramble>press@onevea.com</a></div>
+        <div data-reveal><h4 class="mono" style="color:var(--ink-dim);margin-bottom:10px;font-weight:400">STUDIO</h4><p>Optic Lab 07<br>Coming soon</p></div>
+      </div>
+
+      <!-- Paste your Formspree form ID below (https://formspree.io → New form → copy the "f/xxxxxxx" part) -->
+      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <input type="hidden" name="interests" value="">
+        <input type="hidden" name="_subject" value="New Onevea enquiry">
+        <!-- spam trap: real people never see or fill this -->
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true">
+        <div class="chips">
+          <span class="mono" style="width:100%;color:var(--ink-dim);margin-bottom:6px">I'M INTERESTED IN</span>
+          <button type="button" class="chip">Reserve a pair</button>
+          <button type="button" class="chip">Prescription lenses</button>
+          <button type="button" class="chip">Wholesale</button>
+          <button type="button" class="chip">Press</button>
+          <button type="button" class="chip">Careers</button>
+        </div>
+        <div class="field"><label class="mono" for="f-name">YOUR NAME</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120"><span class="field__err mono"></span></div>
+        <div class="field"><label class="mono" for="f-mail">EMAIL</label><input id="f-mail" name="email" type="email" autocomplete="email" required maxlength="200"><span class="field__err mono"></span></div>
+        <div class="field"><label class="mono" for="f-msg">MESSAGE</label><textarea id="f-msg" name="message" rows="3" required maxlength="4000"></textarea><span class="field__err mono"></span></div>
+        <div>
+          <button type="submit" class="big-btn" data-magnetic data-cursor="SEND" style="border:0">
+            <span>Send signal</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <div class="form__status mono" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div><h4 class="mono">NAVIGATE</h4><a href="index.html">Index</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div><h4 class="mono">LAYERS</h4><p>Low-Light Vision</p><p>Adaptive Lens</p><p>Optic Shell</p></div>
+      <div><h4 class="mono">SOCIAL</h4><a href="#">Instagram</a><a href="#">X / Twitter</a><a href="#">YouTube</a></div>
+      <div><h4 class="mono">LOCAL TIME</h4><p class="js-clock">00:00:00</p></div>
+    </div>
+    <div class="footer__brand" data-footer-brand>ONEVEA</div>
+    <div class="footer__bottom mono">
+      <span>© 2026 ONEVEA. ONE LAYERED VISION SYSTEM.</span>
+      <a href="#top" class="js-totop">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
